@@ -1,8 +1,8 @@
-#include "..\..\script_macros.hpp"
 /*
  File: fn_notification_system.sqf
  Date: 2016-07-23 18:15:17
  Author: Patrick "Lucian" Schmidt
+ Modified by: blackfisch
  Description:
  Arguments:
  0: Text <STRING>
@@ -17,7 +17,7 @@ params[
 if (isServer || !hasInterface) exitWith {};
 disableSerialization;
 _display = finddisplay 46;
-if (GVAR_PNAS["de100_notify",true]) then {
+if (playerNamespace getVariable ["de100_notify",true]) then {
  if (_error) then {
  playSound "3DEN_notificationWarning";
  } else {
