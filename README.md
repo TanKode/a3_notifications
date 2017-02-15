@@ -22,23 +22,19 @@ class CfgFunctions
 
 **Parameters**
 
-* Text <STRING> text to display in the notification
-* Type <STRING> (optional - default: user-color) type of this notification or the color name or the color as array/object
-* Speed <INTEGER> (optional - default: 10) time in seconds to show this notification
-* DisplaySide <STRING> (optional - default: left) left or right
+* Text `STRING` *required* text to display in the notification
+* Type `STRING` *optional - default: user-color* type of this notification or the color name or the color as array/object
+* Speed `INTEGER` *optional - default: 10* time in seconds to show this notification
 
 **Examples**
 
 ```sqf
-// default color on left side for 10 seconds
+// default color for 10 seconds
 ["TEXT"] call tankode_fnc_notification_system;
 
-// success color on left side for 10 seconds
+// success color for 10 seconds
 ["TEXT", "success"] call tankode_fnc_notification_system;
 
-// indigo color on left side for 5 seconds
+// indigo color for 5 seconds
 ["TEXT", "indigo", 5] call tankode_fnc_notification_system;
-
-// blue grey color on right side for 15 seconds
-["TEXT", "blue-grey", 15, "right"] call tankode_fnc_notification_system;
 ```
