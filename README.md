@@ -2,12 +2,9 @@
 
 A notification system for Arma 3 Life.
 
-Es werden auch verschiedene Sounds, je nach Art der Meldung, abgespielt.
-Desweiteren kann man die Meldungen langsam("slow") oder schnell("fast") ausblenden lassen.
-Skript (Funktioniert mit allen Life Versionen, solange man die script_macros von 4.x einfügt):
+Es werden auch verschiedene Sounds, je nach Art der Meldung, abgespielt. Desweiteren kann man die Meldungen `slow` (15sek) oder `fast` (5sek) ausblenden lassen. Das Skript funktioniert mit allen Life Versionen, solange man die script_macros von 4.x einfügt:
 
-In der configuration.sqf muss noch eine Zeile eingefügt werden:
-life_open_notifications = [];
+In der `configuration.sqf` muss noch eine Zeile eingefügt werden: `life_open_notifications = [];`
 
 ## Usage
 
