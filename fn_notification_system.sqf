@@ -3,6 +3,7 @@
  Author: TanKode
  Author-URI: https://github.com/TanKode
  License: MIT
+ Version: v1.0
  Parameter:
  0: Text <STRING> text to display in the notification
  1: Type <STRING> type of this notification or the colorname or the color as array/object
