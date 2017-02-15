@@ -2,6 +2,7 @@
  File: fn_notification_system.sqf
  Author: TanKode
  Author-URI: https://github.com/TanKode
+ License: MIT
  Arguments:
  0: Text <STRING> text to display in the notification
  1: Type <STRING> type of this notification or the colorname or the color as array/object

@@ -1,6 +1,6 @@
 # A3 Notification System
 
-A notification system for ArmA 3.
+A user notification system for ArmA 3 to replace `hint` and offer a bit more styling.
 
 ## Installation
 
