@@ -7,13 +7,11 @@
  0: Text <STRING> text to display in the notification
  1: Type <STRING> type of this notification or the colorname or the color as array/object
  2: Speed <INTEGER> time in seconds to show this notification
- 3: DisplaySide <STRING> left or right
 */
 params [
     ["_text","",[""],
     ["_type","default",["",[],{}]],
     ["_speed",10,[10]]
-    ["_displaySide","left",[""]]
 ];
 if (isServer || !hasInterface) exitWith {};
 if(isNil "open_notifications") then {
@@ -117,6 +115,7 @@ _borderWidth = _width * 0.05;
 _textWidth = _width * 0.95;
 _height = 0.5;
 
+_displaySide = "left"; // left or right
 if(_displaySide == "left") then {
     _posX = 0.005;
     _posY = 0.01;
