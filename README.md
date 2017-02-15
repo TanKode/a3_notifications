@@ -20,21 +20,21 @@ class CfgFunctions
 
 ## Usage
 
-**Parameters**
+### Parameters
 
-* Text `STRING` *required* text to display in the notification
-* Type `STRING` *optional - default: user-color* type of this notification or the color name or the color as array/object
-* Speed `INTEGER` *optional - default: 10* time in seconds to show this notification
+* *_text* `string` *required* text to display in the notification
+* *_type* `string` *optional - default: user-color* type of this notification or the color name or the color as array/object
+* *_speed* `integer` *optional - default: 10* time in seconds to show this notification
 
-**Examples**
+### Examples
 
 ```sqf
 // default color for 10 seconds
-["TEXT"] call tankode_fnc_notification_system;
+["This is my notfication text."] call tankode_fnc_notification_system;
 
 // success color for 10 seconds
-["TEXT", "success"] call tankode_fnc_notification_system;
+["This is my notfication text.", "success"] call tankode_fnc_notification_system;
 
 // indigo color for 5 seconds
-["TEXT", "indigo", 5] call tankode_fnc_notification_system;
+["This is my notfication text.", "indigo", 5] call tankode_fnc_notification_system;
 ```
