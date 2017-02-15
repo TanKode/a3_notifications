@@ -1,16 +1,32 @@
-# A3L Notification System
+# A3 Notification System
 
-A notification system for Arma 3 Life.
+A notification system for ArmA 3.
 
-Es werden auch verschiedene Sounds, je nach Art der Meldung, abgespielt. Desweiteren kann man die Meldungen `slow` (15sek) oder `fast` (5sek) ausblenden lassen. Das Skript funktioniert mit allen Life Versionen, solange man die script_macros von 4.x einfügt:
+## Installation
 
-In der `configuration.sqf` muss noch eine Zeile eingefügt werden: `life_open_notifications = [];`
+**functions.hpp**
+```
+class Functions {
+    file = "core\functions"; // adjust it to your setup
+    class notification_system {};
+};
+```
 
 ## Usage
 
+**Parameters**
+
+* Text <STRING> text to display in the notification
+* Type <STRING> type of this notification or the color name or the color as array/object
+* Speed <INTEGER> time in seconds to show this notification
+
 ```
-["TEXT",false,"fast"] call life_fnc_notification_system;
-0: Text <STRING>
-1: Type <BOOLEAN> false = noError true = Error
-2: Speed <STRING> fast = fadeout nach 5 sek, slow = fadeout nach 15 sek
+["TEXT","error",15] call notification_system;
+["TEXT","success",5] call notification_system;
+["TEXT","indigo",10] call notification_system;
+
+// for life server
+["TEXT","error",15] call life_fnc_notification_system;
 ```
+
+> You have to adjust the function name depending on your mission setup.
