@@ -22,9 +22,9 @@ class CfgFunctions
 
 ### Parameters
 
-* *_text* `string` *required* text to display in the notification
-* *_type* `string` *optional - default: user-color* type of this notification or the color name or the color as array/object
-* *_speed* `integer` *optional - default: 10* time in seconds to show this notification
+* **_text** `string` *required* text to display in the notification
+* **_type** `string` *optional - default: user-color* type of this notification or the color name or the color as array/object
+* **_speed** `integer` *optional - default: 10* time in seconds to show this notification
 
 ### Examples
 
