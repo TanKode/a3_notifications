@@ -1,5 +1,9 @@
 # A3 Notification System
 
+[![Travis](https://img.shields.io/travis/TanKode/a3_notifications.svg?style=flat-square)](https://travis-ci.org/TanKode/a3_notifications/branches)
+[![GitHub release](https://img.shields.io/github/release/TanKode/a3_notifications.svg?style=flat-square)](https://github.com/TanKode/a3_notifications/releases)
+[![license](https://img.shields.io/github/license/TanKode/a3_notifications.svg?style=flat-square)](https://github.com/TanKode/a3_notifications/blob/master/LICENSE)
+
 A user notification system for ArmA 3 to replace `hint` and offer a bit more styling.
 
 ## Installation
