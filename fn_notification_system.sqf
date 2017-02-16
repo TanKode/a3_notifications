@@ -125,10 +125,8 @@ _posY = 0;
 _displaySide = "right"; // left or right
 if(_displaySide == "left") then {
     _posX = _margin + safeZoneX;
-    _posY = 0.01;
 } else {
     _posX = safeZoneW + safeZoneX - _margin - _width;
-    _posY = 0.01;
 };
 
 private _BorderCtrl = _display ctrlCreate ["RscText", -1];
