@@ -21,7 +21,7 @@ if(isNil "open_notifications") then {
 disableSerialization;
 _display = findDisplay 46;
 
-_alpha = 0.75;
+_alpha = 1;
 _colorName = "";
 _color = [];
 if(typeName _type == "ARRAY" || typeName _type == "OBJECT") then {
