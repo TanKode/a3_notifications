@@ -122,7 +122,7 @@ _height = 0.01;
 _posX = 0;
 _posY = 0;
 
-_displaySide = "right"; // left or right
+_displaySide = "left"; // left or right
 if(_displaySide == "left") then {
     _posX = _margin + safeZoneX;
 } else {
