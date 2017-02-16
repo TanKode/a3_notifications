@@ -1,11 +1,7 @@
 language: python
 
 python:
-- '3.4'
-
-before_script:
-# Credits to ACE3 for these validators
-- wget https://www.dropbox.com/s/wzj5js0kc2xlanc/sqf_validator.py
+- '3.5'
 
 script:
 - python3 sqf_validator.py
