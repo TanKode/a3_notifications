@@ -176,7 +176,7 @@ if (count open_notifications > 0) then {
             _ctrlText ctrlSetPosition [(_posX + _borderWidth), (_posY + _offsetY)];
             _ctrlBorder ctrlCommit 0.25;
             _ctrlText ctrlCommit 0.25;
-            _offsetY = _offsetY + _margin + ((ctrlPosition (_ctrlText)) select 3);
+            _offsetY = _offsetY + _margin + ((ctrlPosition _ctrlText) select 3);
             if (_activeNotifications > 3) then {
                 _ctrlText ctrlSetFade 1;
                 _ctrlText ctrlCommit 0.2;
