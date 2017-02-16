@@ -115,8 +115,8 @@ if (_text isEqualType "") then {
 playSound "HintExpand";
 
 _margin = 0.01;
-_width = 0.4;
-_borderWidth = 0.0075;
+_width = 300 * pixelW;
+_borderWidth = 10 * pixelW;
 _textWidth = _width - _borderWidth;
 _height = 0.01;
 _posX = 0;
